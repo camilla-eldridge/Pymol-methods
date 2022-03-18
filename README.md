@@ -128,24 +128,8 @@ For better quality images used 'ray' command
 
 see ray modes:https://pymolwiki.org/index.php/Ray 
 
-# normal color
-set ray_trace_mode, 0
 
-# normal color + black outline
-set ray_trace_mode,  1
-
-# black outline only
-set ray_trace_mode,  2
-
-# quantized color + black outline
-set ray_trace_mode,  3
-
-set ray_trace_mode, 1 # (or 2 or 3; best with "bg_color white;set antialias,2")
-# These two new modes -- 2 and 3 -- are cool cartoon looking modes.
-
-# change the color of the outline to a named color, or a hex-code
-set ray_trace_color, magenta
-set ray_trace_color, 0x0033ff
+For more pymol scripts see: http://pldserver1.biochem.queensu.ca/~rlc/work/pymol/ 
 
 
 
