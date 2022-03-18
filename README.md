@@ -1,4 +1,4 @@
-# pymol_methods
+# pymol-methods
 
 
 Scripts for mapping in pymol are for py2.7 (note - i'm not the script author)...now pymol uses py3 the work around is this:
@@ -95,6 +95,7 @@ https://bioinformatics.stackexchange.com/questions/2859/how-to-colour-multiple-r
         select toBeColored, ((i. 10-20 or i. 30-40) and c. L ) or ((i. 5-10+20-30) and c. H)
         color yellow, toBeColored
         
+Handy pymol for beginners link: https://dasher.wustl.edu/bio5357/software/pymol/beginners.pdf 
         
         
 
