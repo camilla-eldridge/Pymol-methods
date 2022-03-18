@@ -7,3 +7,11 @@ Since python 3,  scripts used prior for mapping in pymol don't work...instead in
               conda activate test_pymol
               conda install -c conda-forge pmw # if don't have pmw already for py2.7
               pymol 
+
+
+
+see here: https://github.com/schrodinger/pymol-open-source/issues/110
+
+
+# Mapping data to structures in pymol
+
