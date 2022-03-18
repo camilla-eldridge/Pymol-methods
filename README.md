@@ -90,7 +90,9 @@ PYMOL ADD COLOUR BAR
 ## Manual selections for sites: 
 
 pymol manual colouring:
-https://bioinformatics.stackexchange.com/questions/2859/how-to-colour-multiple-residues-in-pymol
+see https://pymolwiki.org/index.php/Advanced_Coloring
+
+also: https://bioinformatics.stackexchange.com/questions/2859/how-to-colour-multiple-residues-in-pymol
 
         select toBeColored, ((i. 10-20 or i. 30-40) and c. L ) or ((i. 5-10+20-30) and c. H)
         color yellow, toBeColored
