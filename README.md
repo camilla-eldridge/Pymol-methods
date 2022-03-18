@@ -22,10 +22,10 @@ You will need the abps plugin (can download from here: https://pymolwiki.org/ind
 
 1. Save data as tab delimited file and find minimum and maximum values.
 
-e.g test.txt
-1   0.01
-2   0.21
-3   0.99
+    e.g test.txt
+    1   0.01
+    2   0.21
+    3   0.99
 
 2. Download  data2bfactor.py and spectrumany.py save to working dir (FINAL_PYMOL).
 
@@ -33,30 +33,31 @@ e.g test.txt
 
 4. Run data2bfactor script in pymol commandline 
 
-PYMOL> run /home/path/to/data2bfactor.py
+        PYMOL> run /home/path/to/data2bfactor.py
 
 5.Run spectrumany script in pymol commandline:
-      PYMOL> run /home/path/to/spectrumany.py
+              PYMOL> run /home/path/to/spectrumany.py
       
 6. Run spectrumany script in pymol commandline
-      PYMOL> run /home/path/to/spectrum_bar.py
+              PYMOL> run /home/path/to/spectrum_bar.py
 
 7.Select region, chain or entire molecule to add data info to:
 
 e.g full model select : 
-PYMOL> select  model.pdb
+        PYMOL> select  model.pdb
 
 (see http://betainverse.github.io/blog/2014/10/13/pymol-color-by-data/  for more options)
 
 8.Run data2b function:
-data2b_res model.pdb, /home/path/to/test.txt
+          data2b_res model.pdb, /home/path/to/test.txt
 
 9.Run spectrum function (using min and max values for colour gradient)
-spectrum b, rainbow, model.test, minimum=-1.04, maximum=1.37
-https://pymolwiki.org/index.php/Spectrumbar
+        spectrum b, rainbow, model.test, minimum=-1.04, maximum=1.37
+        
+(see https://pymolwiki.org/index.php/Spectrumbar)
 
 10.Run spectrumany to edit spectrum colours (using min and max values again):
-spectrumany b, purple grey80, model.pdb, minimum=-0.01,maximum=1.4
+        spectrumany b, purple grey80, model.pdb, minimum=-0.01,maximum=1.4
 
       
 Notes:
@@ -73,5 +74,11 @@ OR :
 spectrumbar red,orange,yellow,green,blue,purple
 
 
+## Manual selections for sites: 
 
-      
+pymol manual colouring:
+https://bioinformatics.stackexchange.com/questions/2859/how-to-colour-multiple-residues-in-pymol
+
+        select toBeColored, ((i. 10-20 or i. 30-40) and c. L ) or ((i. 5-10+20-30) and c. H)
+        color yellow, toBeColored
+
