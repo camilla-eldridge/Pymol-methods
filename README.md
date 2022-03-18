@@ -1,7 +1,9 @@
 # pymol_methods
 
 
-Since python 3,  scripts used prior for mapping in pymol don't work...instead install pymol version 2.5 in a conda environment:
+Scripts for mapping in pymol are for py2.7 (note - i'm not the script author)...now pymol uses py3 the work around is this:
+
+Install pymol version 2.5 in a conda environment:
 
               conda create -n test_pymol -c tpeulen -c conda-forge pymol-open-source
               conda activate test_pymol
@@ -9,6 +11,8 @@ Since python 3,  scripts used prior for mapping in pymol don't work...instead in
               pymol 
 
 
+
+The -c tells conda to install from the specified channel (channel=a location where packages are stored), conda-forge is a GitHub organization containing repos of conda recipes...
 
 see here: https://github.com/schrodinger/pymol-open-source/issues/110
 
