@@ -17,6 +17,7 @@ Just to note....to install the new pymol version 2.5 in a conda environment(note
               conda activate test_pymol
               pymol 
 
+see: https://pymol.org/conda/
 
 
 The -c tells conda to install from the specified channel (channel=a location where packages are stored), conda-forge is a GitHub organization containing repos of conda recipes...
