@@ -44,6 +44,8 @@ You will need the abps plugin (can download from here: https://pymolwiki.org/ind
 
 4. Run data2bfactor script in pymol commandline 
 
+This loads your data in place of the B-factor (b) or occupancy (q) columns...so your data and not the b factor data is mapped when you use the cmd 'spectrum b, '
+
         PYMOL> run /home/path/to/data2bfactor.py
 
 5.Run spectrumany script in pymol commandline:
@@ -58,7 +60,7 @@ You will need the abps plugin (can download from here: https://pymolwiki.org/ind
 
 e.g full model select : 
 
-        PYMOL> select  model.pdb
+        PYMOL> select  model_name
 
 (see http://betainverse.github.io/blog/2014/10/13/pymol-color-by-data/  for more options)
 
@@ -68,14 +70,14 @@ e.g full model select :
 
 9.Run spectrum function (using min and max values for colour gradient)
 
-        spectrum b, cyan purple, model.test, minimum=-1.04, maximum=1.37
+        spectrum b, cyan purple, model_name, minimum=-1.04, maximum=1.37
         
 (see https://pymolwiki.org/index.php/Spectrumbar)
 
 
 10.Run spectrumany to edit spectrum colours (using min and max values again):
 
-        spectrumany b, purple grey80, model.pdb, minimum=-0.01,maximum=1.4
+        spectrumany b, purple grey80, model_name, minimum=-0.01,maximum=1.4
 
 11.Add a colour bar:
 
@@ -85,8 +87,11 @@ Notes:
 
 e.g Colour everything below 0.7  
 
-        spectrumany b, cyan purple, model.pdb, minimum=0.7,maximum=1.37
+        spectrumany b, cyan purple, model_name, minimum=0.7,maximum=1.37
 
+e.g To colour by specific values, this seems to work, have same n colours as factors:
+
+spectrum b, cyan yellow purple green, model_name, minimum=1, maximum=4
 
 
 PYMOL ADD COLOUR BAR
@@ -113,7 +118,7 @@ Handy pymol for beginners link: https://dasher.wustl.edu/bio5357/software/pymol/
 
 ## Viewing multiple structures in pymol
 
-open strutcures then do:
+open structures then do:
 
         set grid_mode, 1     #This will separate each structure in a grid (so they don't overlap) 
         alignto    # aligns structures 
