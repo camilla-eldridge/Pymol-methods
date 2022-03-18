@@ -36,42 +36,51 @@ You will need the abps plugin (can download from here: https://pymolwiki.org/ind
         PYMOL> run /home/path/to/data2bfactor.py
 
 5.Run spectrumany script in pymol commandline:
-              PYMOL> run /home/path/to/spectrumany.py
+
+        PYMOL> run /home/path/to/spectrumany.py
       
 6. Run spectrumany script in pymol commandline
-              PYMOL> run /home/path/to/spectrum_bar.py
+7. 
+        PYMOL> run /home/path/to/spectrum_bar.py
 
 7.Select region, chain or entire molecule to add data info to:
 
 e.g full model select : 
+
         PYMOL> select  model.pdb
 
 (see http://betainverse.github.io/blog/2014/10/13/pymol-color-by-data/  for more options)
 
 8.Run data2b function:
-          data2b_res model.pdb, /home/path/to/test.txt
+
+        data2b_res model.pdb, /home/path/to/test.txt
 
 9.Run spectrum function (using min and max values for colour gradient)
+
         spectrum b, rainbow, model.test, minimum=-1.04, maximum=1.37
         
 (see https://pymolwiki.org/index.php/Spectrumbar)
 
+
 10.Run spectrumany to edit spectrum colours (using min and max values again):
+
         spectrumany b, purple grey80, model.pdb, minimum=-0.01,maximum=1.4
 
       
 Notes:
 
 e.g Colour everything below 0.7  
-spectrumany b, cyan purple, model.pdb, minimum=0.7,maximum=1.37
+
+        spectrumany b, cyan purple, model.pdb, minimum=0.7,maximum=1.37
 
 
 
 PYMOL ADD COLOUR BAR
-ramp_new colorbar, none, [-1.4, 1.37], [cyan, purple]
-ramp_new colorbar, none, [0.7, 1.37], [cyan, purple]
-OR :
-spectrumbar red,orange,yellow,green,blue,purple
+
+        ramp_new colorbar, none, [-1.4, 1.37], [cyan, purple]
+        ramp_new colorbar, none, [0.7, 1.37], [cyan, purple]
+        OR :
+        spectrumbar red,orange,yellow,green,blue,purple
 
 
 ## Manual selections for sites: 
