@@ -103,6 +103,9 @@ PYMOL ADD COLOUR BAR
         spectrumbar red,orange,yellow,green,blue,purple
 
 
+see: https://pymolwiki.org/index.php/Color_Values for colours
+
+
 ## Manual selections for sites: 
 
 pymol manual colouring:
