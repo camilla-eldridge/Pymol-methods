@@ -13,6 +13,11 @@ Since python 3,  scripts used prior for mapping in pymol don't work...instead in
 see here: https://github.com/schrodinger/pymol-open-source/issues/110
 
 
+
+You will need the abps plugin (can download from here: https://pymolwiki.org/index.php/Apbsplugin )
+
+
+
 # Mapping data to structures in pymol 
 
 1. Save data as tab delimited file and find minimum and maximum values.
@@ -54,5 +59,19 @@ https://pymolwiki.org/index.php/Spectrumbar
 spectrumany b, purple grey80, model.pdb, minimum=-0.01,maximum=1.4
 
       
-      
+Notes:
+
+e.g Colour everything below 0.7  
+spectrumany b, cyan purple, model.pdb, minimum=0.7,maximum=1.37
+
+
+
+PYMOL ADD COLOUR BAR
+ramp_new colorbar, none, [-1.4, 1.37], [cyan, purple]
+ramp_new colorbar, none, [0.7, 1.37], [cyan, purple]
+OR :
+spectrumbar red,orange,yellow,green,blue,purple
+
+
+
       
