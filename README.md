@@ -3,7 +3,15 @@
 
 Scripts for mapping in pymol are for py2.7 (note - i'm not the script author)...now pymol uses py3 the work around is this:
 
-Install pymol version 2.5 in a conda environment:
+To install pymol version 2.0 -2.4 in a conda environment:
+
+            conda create -n pymol_py2.7 python=2.7   # make env for py2.7 
+            conda activate pymol_py2.7
+            conda install -c schrodinger pymol    #install older version on pymol in your 2.7 env 
+            pymol
+
+
+Just to note....to install the new pymol version 2.5 in a conda environment(note mapping scripts won't work with this version - for this method didn't use this version!!!!):
 
               conda create -n test_pymol -c tpeulen -c conda-forge pymol-open-source
               conda activate test_pymol
