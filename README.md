@@ -15,7 +15,6 @@ Just to note....to install the new pymol version 2.5 in a conda environment(note
 
               conda create -n test_pymol -c tpeulen -c conda-forge pymol-open-source
               conda activate test_pymol
-              conda install -c conda-forge pmw # if don't have pmw already for py2.7
               pymol 
 
 
