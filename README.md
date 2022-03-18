@@ -69,7 +69,7 @@ e.g full model select :
 
 9.Run spectrum function (using min and max values for colour gradient)
 
-        spectrum b, rainbow, model.test, minimum=-1.04, maximum=1.37
+        spectrum b, cyan purple, model.test, minimum=-1.04, maximum=1.37
         
 (see https://pymolwiki.org/index.php/Spectrumbar)
 
@@ -78,7 +78,10 @@ e.g full model select :
 
         spectrumany b, purple grey80, model.pdb, minimum=-0.01,maximum=1.4
 
-      
+11.Add a colour bar:
+
+        ramp_new colorbar, none, [-1.4, 1.37], [cyan, purple]
+
 Notes:
 
 e.g Colour everything below 0.7  
