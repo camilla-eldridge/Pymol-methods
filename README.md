@@ -99,5 +99,19 @@ also: https://bioinformatics.stackexchange.com/questions/2859/how-to-colour-mult
         
 Handy pymol for beginners link: https://dasher.wustl.edu/bio5357/software/pymol/beginners.pdf 
         
-        
+
+
+## Viewing multiple structures in pymol
+
+open strutcures then do:
+
+        set grid_mode, 1     #This will separate each structure in a grid (so they don't overlap) 
+        alignto    # aligns structures 
+
+
+
+
+
+
+
 
